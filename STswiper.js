@@ -2,16 +2,14 @@
       
     const swiper = new Swiper('#mainbanner', {
 
-
-
         // Optional parameters
         
         loop: true,
         // 자동 재생    delay 값 시간마다 재생된다.
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        //   },
     
         // If we need pagination
         pagination: {
@@ -24,6 +22,18 @@
         nextEl: '#mainbanner .swiper-button-next',
         prevEl: '#mainbanner .swiper-button-prev',
         },
+        breakpoints: {
+            // xxx 값 이상에서.. 속성값
+
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 50,
+            },
+          },
     
         // And if we need scrollbar
 
